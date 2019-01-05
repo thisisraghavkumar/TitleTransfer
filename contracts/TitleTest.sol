@@ -17,8 +17,8 @@ contract TitleTest is Title {
 		require(asset[11]==1639,"PID 11 not registered with sender SSN 1639.");
 	}
 	
-	function test_transfer() public{
-		transfer(10,1640,1639);
+	function test_transfer_pid() public{
+		transfer_pid(10,1640,1639);
 		require(asset[10]==1639,"PID 10 not transferred from 1640 to 1639.");
 	}
 }
