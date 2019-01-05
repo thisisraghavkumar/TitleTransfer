@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-import "./Title.sol"
+import "./Title.sol";
 
 contract TitleTest is Title {
 	function test_reg_ssn() public{
