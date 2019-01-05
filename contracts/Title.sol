@@ -3,8 +3,8 @@ pragma solidity ^0.4.24;
 contract Title{
     
     address owner;
-    mapping(uint16 => address) private identity;
-    mapping(uint16 => uint16) private asset;
+    mapping(uint16 => address) internal identity;
+    mapping(uint16 => uint16) internal asset;
     uint16[] properties ;
 
     event identity_mismatch(uint16 ssn, address adr);
