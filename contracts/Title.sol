@@ -23,7 +23,7 @@ contract Title{
         //owner.transfer(500);
     }
 
-    function resgister_pid(uint16 pid, uint16 ssn) public{
+    function register_pid(uint16 pid, uint16 ssn) public{
         if (identity[ssn] != msg.sender){
             emit identity_mismatch(ssn,msg.sender);
             return;
